@@ -1,0 +1,24 @@
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [vue()],
+  build: {
+    lib: {
+      entry: 'src/lib/index.ts',
+      name: 'VueVirtual',
+      fileName: (format) => `vue-virtual.${format}.js`,
+      formats: ['es', 'cjs'],
+    },
+    rollupOptions: {
+      // Do not bundle Vue; expect it as a peer dependency.
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
+  },
+});
