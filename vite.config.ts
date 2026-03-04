@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/lib/index.ts',
-      name: 'VueVirtual',
-      fileName: (format) => `vue-virtual.${format}.js`,
+      name: 'VirtualListVue',
+      fileName: (format) => `virtual-list-vue.${format}.js`,
       formats: ['es', 'cjs'],
     },
     rollupOptions: {

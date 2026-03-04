@@ -8,7 +8,7 @@ const items = ref(Array.from({ length: 10000 }, (_, i) => `Item #${i + 1}`))
 <template>
   <main style="padding: 1.5rem; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
     <h1 style="font-size: 1.5rem; margin-bottom: 1rem;">
-      vue-virtual demo
+      virtual-list-vue demo
     </h1>
 
     <p style="margin-bottom: 1rem; color: #4b5563;">
