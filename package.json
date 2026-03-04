@@ -1,13 +1,23 @@
 {
   "name": "virtual-list-vue",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
+  "keywords": [
+    "vue",
+    "vue3",
+    "virtual-list",
+    "virtual scroll",
+    "windowing",
+    "infinite list",
+    "virtualization",
+    "performance"
+  ],
   "main": "./dist/virtual-list-vue.cjs.js",
   "module": "./dist/virtual-list-vue.es.js",
   "types": "./dist/lib/index.d.ts",

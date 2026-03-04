@@ -3,6 +3,18 @@
 **`virtual-list-vue`** is a small virtual list component for **Vue 3**.  
 It only renders the visible items in a scrollable container, which keeps your app fast even with tens of thousands of rows.
 
+### Keywords
+
+- virtual list
+- virtual scroll
+- windowing
+- infinite list
+- large list
+- vue 3
+- vue virtual list
+- virtualization
+- performance
+
 ### Install
 
 ```bash

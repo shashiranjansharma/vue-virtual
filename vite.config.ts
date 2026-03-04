@@ -5,6 +5,8 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   build: {
+    minify: 'esbuild',
+    sourcemap: false,
     lib: {
       entry: 'src/lib/index.ts',
       name: 'VirtualListVue',
@@ -15,6 +17,7 @@ export default defineConfig({
       // Do not bundle Vue; expect it as a peer dependency.
       external: ['vue'],
       output: {
+        exports: 'named',
         globals: {
           vue: 'Vue',
         },
