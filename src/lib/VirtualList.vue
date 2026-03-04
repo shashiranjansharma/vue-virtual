@@ -103,16 +103,16 @@ watch(
 </script>
 
 <template>
-  <div ref="containerRef" class="vue-virtual-container" :style="{
+  <div ref="containerRef" class="virtual-list-vue-container" :style="{
     height: `${height}px`,
     overflowY: 'auto',
     position: 'relative'
   }" @scroll="handleScroll">
-    <div class="vue-virtual-spacer" :style="{
+    <div class="virtual-list-vue-spacer" :style="{
       height: `${totalHeight}px`,
       position: 'relative'
     }">
-      <div class="vue-virtual-inner" :style="{
+      <div class="virtual-list-vue-inner" :style="{
         transform: `translateY(${offsetTop}px)`,
         willChange: 'transform'
       }">
@@ -124,7 +124,7 @@ watch(
 </template>
 
 <style scoped>
-.vue-virtual-container {
+.virtual-list-vue-container {
   width: 100%;
 }
 </style>
